@@ -53,8 +53,6 @@ describe("test Cart", () => {
       onRemove: () => {},
     });
     render(<Cart />);
-    expect(
-      screen.getByText("The shopping bag is empty now")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Your shopping bag is empty")).toBeInTheDocument();
   });
 });

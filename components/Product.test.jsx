@@ -4,7 +4,7 @@
 import { render, screen } from "@testing-library/react";
 import Product from "./Product";
 import React from "react";
-import '@testing-library/jest-dom'
+import "@testing-library/jest-dom";
 describe("test Product", () => {
   it("render", () => {
     render(
@@ -17,6 +17,6 @@ describe("test Product", () => {
         }}
       />
     );
-    expect(screen.getByText("Test")).toBeInTheDocument();
+    expect(screen.getByText("Name: Test")).toBeInTheDocument();
   });
 });
